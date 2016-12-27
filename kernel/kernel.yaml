@@ -1,10 +1,9 @@
 Package:
  name: 'kernel'
- sources:
-   - git:
-      src: 'https://github.com/open-power-host-os/linux.git'
-      branch: 'hostos-devel'
-      commit_id: '968c61815916312b756653b1b57351a1e44d7176'
+ clone_url: 'https://github.com/gutoyr/linux.git'
+ branch: 'mambo'
+ commit_id: 'b82af4cb5ef8e1e2e15959f53b98c964c5ab74fa'
+>>>>>>> f2730ac... Add gutoyr kernel repo
  version:
    file: 'Makefile'
    regex: 'VERSION.*([\d.]+)\nPATCHLEVEL\s*=\s*(?P<patch>[\d.]*)\nSUBLEVEL\s*=\s*(?(patch)([\d.]*))\nEXTRAVERSION\s*=\s*([-\w.]*)\n'
